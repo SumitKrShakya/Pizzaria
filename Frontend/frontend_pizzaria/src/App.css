@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+.body{
+  background-color: #61dafb;
+  width: 16px;
+  height: 16px;
+}
 .App {
     text-align: center;
 }
