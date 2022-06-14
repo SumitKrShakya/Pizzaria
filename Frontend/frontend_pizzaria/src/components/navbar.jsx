@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import {Img} from "./images/pzimg.png"
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div>navbar</div>
-  )
-}
+    <>
+    <Img></Img>
+      <div>navbar</div>
+      <div>navbar</div>
+      <div>navbar</div>
+    </>
+  );
+};
 
-export default navbar
+export default Navbar;
