@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../App.css' 
+import '../App.css' 
 
 
 const Design1 = () => {
@@ -20,7 +20,7 @@ const Design1 = () => {
 
 
 return (
-    <div className='bg-black'>
+    <div className='w-8 h-20 text-red-400'>
         sssss
     </div>
 )
