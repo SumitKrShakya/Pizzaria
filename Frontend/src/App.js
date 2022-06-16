@@ -1,11 +1,12 @@
 import React from 'react'
 import Test from './components/Test';
+import D1 from './components/D1';
 import './global.css';
 const App = () => {
   return (
-    <div className=' h-4 w-16 bg-blue-300'>
+    <div className='bg-blue-300'>
         App
-        <Test/>
+        <D1/>
     </div>
   )
 }
