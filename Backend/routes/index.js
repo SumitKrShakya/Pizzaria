@@ -10,18 +10,13 @@ const bodyParser = require('body-parser')
 const jsonParser = bodyParser.json()
 
 
-router.get('/', (req, res) => {
+router.get('/img', (req, res) => {
     console.log('Requested on /')
-    res.json([{
+    res.json({
         id: "12321",
-        name: "Chrome"
-    }, {
-        id: "23532.23",
-        name: "Edge 11"
-    }, {
-        id: "23.1",
-        name: "Firefox"
-    }])
+        name: "Chrome",
+        image: "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG98ZW58MHx8MHx8&w=1000&q=80"
+    })
 })
 
 router.post('/user', jsonParser, function(req, res) {

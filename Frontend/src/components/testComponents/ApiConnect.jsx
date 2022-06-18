@@ -2,7 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const ApiConnect = () => {
-  const url = "https://foodish-api.herokuapp.com/api/";
+  const url1 = "https://foodish-api.herokuapp.com/api/";
+  const url = "/img";
 
   const [first, setFirst] = useState(null);
 
@@ -12,6 +13,7 @@ const ApiConnect = () => {
 
       const response = await fetch(url);
       const photo = await response.json();
+      console.log(photo)
       setFirst(photo);
     } catch (error) {
       console.log(error);
